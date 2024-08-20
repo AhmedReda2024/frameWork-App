@@ -1,0 +1,79 @@
+<section class="contact mb-4">
+  <h1 class="text-uppercase fw-bold h2 py-3 text-center">contact component</h1>
+  <div class="text-center">
+    <div class="line-star bg-color"></div>
+    <i class="fas fa-star px-3"></i>
+    <div class="line-star bg-color"></div>
+  </div>
+  <form class="w-50 mx-auto mt-4">
+    <label
+      [class.__top]="!userName"
+      for="userName"
+      class="position-relative top-0"
+      >userName :
+    </label>
+    <input
+      id="userName"
+      type="text"
+      class="form-control border-0 border-bottom py-3 position-relative"
+      placeholder="userName"
+      name="userName"
+      [(ngModel)]="userName"
+    />
+
+    <!-- ========================= -->
+
+    <label
+      [class.__top]="!userAge"
+      for="userAge"
+      class="position-relative top-0"
+      >userAge :
+    </label>
+    <input
+      id="userAge"
+      type="number"
+      class="form-control border-0 border-bottom py-3 position-relative"
+      placeholder="userAge"
+      name="userAge"
+      [(ngModel)]="userAge"
+    />
+
+    <!-- ========================= -->
+
+    <label
+      [class.__top]="!userEmail"
+      for="userEmail"
+      class="position-relative top-0"
+      >userEmail :
+    </label>
+    <input
+      id="userEmail"
+      type="email"
+      class="form-control border-0 border-bottom py-3 position-relative"
+      placeholder="userEmail"
+      name="userEmail"
+      [(ngModel)]="userEmail"
+    />
+
+    <!-- ========================= -->
+
+    <label
+      [class.__top]="!userPassword"
+      for="userPassword"
+      class="position-relative top-0"
+      >userPassword :
+    </label>
+    <input
+      id="userPassword"
+      type="password"
+      class="form-control border-0 border-bottom py-3 position-relative"
+      placeholder="userPassword"
+      name="userPassword"
+      [(ngModel)]="userPassword"
+    />
+
+    <!-- ========================= -->
+
+    <button class="btn btn-primary contact-btn mt-4">send Message</button>
+  </form>
+</section>
